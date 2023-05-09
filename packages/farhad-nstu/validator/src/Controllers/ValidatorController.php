@@ -9,6 +9,7 @@ class ValidatorController
     public function __invoke(Validator $inspire) {
         $quote = $inspire->justDoIt();
 
-        return $quote;
+        // return $quote;
+        return view('inspire::index', compact('quote'));
     }
 }

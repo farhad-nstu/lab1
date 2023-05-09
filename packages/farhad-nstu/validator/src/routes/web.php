@@ -3,4 +3,4 @@
 use FarhadNstu\Validator\Controllers;
 use Illuminate\Support\Facades\Route;
 
-Route::get('inspire', ValidatorController::class);
+Route::get('/inspire', [Controllers\ValidatorController::class, '__invoke']);
